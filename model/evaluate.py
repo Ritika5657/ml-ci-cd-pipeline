@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import joblib
 
-data = pd.read_csv('data\iris.csv')
+data = pd.read_csv('data/iris.csv')
 
 X = data.drop('species', axis = 1)
 y = data["species"]
