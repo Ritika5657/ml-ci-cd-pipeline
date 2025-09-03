@@ -42,7 +42,7 @@ def predict():
 			x = [x]
 
 		X = np.array(x, dtype = float)
-		preds = model.predict()
+		preds = model.predict(X)
 
 		preds = preds.tolist()
 		return jsonify(prediction = preds), 200
