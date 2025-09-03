@@ -6,7 +6,7 @@ import numpy as np
 from flask import Flask, request, jsonify
 
 #---Config---
-MODEL_PATH = os.grtenv("MODEL_PATH", "model/iris_model.pkl") 
+MODEL_PATH = os.getenv("MODEL_PATH", "model/iris_model.pkl") 
 
 app = Flask(__name__)
 
